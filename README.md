@@ -15,7 +15,6 @@
 [CustomScheduler] Task "running" scheduled every 10000ms
 [CustomScheduler] running
 [CustomScheduler] running
-^C
 ```
 
 ## Завершение работы
