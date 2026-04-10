@@ -4,7 +4,7 @@ const createLogger = require ('./logger');
 const log = createLogger(config.appName);
 log(`scheduler.js started v${config.version}`);
 
-function scheduleTask(name, interval = config.defaultInterval, task) {
+function scheduleTask(name, interval = config.defaultInterval, task = () => {}) {
     log(`Task "${name}" scheduled every ${interval}ms`);
     setInterval(task, interval);
 }
