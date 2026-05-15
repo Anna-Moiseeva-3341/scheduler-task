@@ -5,7 +5,7 @@ const Scheduler = require('./src/scheduler');
 const logger = new Logger(config.appName, console, config.logLevel);
 const scheduler = new Scheduler(logger, config.defaultInterval);
 
-logger.info(`App v${config.version} started`);
+logger.info(`CustomScheduler v${config.version} started`);
 
 const mainTask = () => {
     const reqId = Math.floor(Math.random() * 100);
